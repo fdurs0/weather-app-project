@@ -124,7 +124,7 @@ ul {
 
 #element-with-background-image {
     position: relative;
-    background-size: contain;
+    background-size: absolute;
     background-repeat: no-repeat;
     background-image: url("../images/carmen-sandiego.jpg");
 }
