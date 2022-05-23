@@ -124,9 +124,9 @@ ul {
 
 #element-with-background-image {
     position: relative;
-    background-size: absolute;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("images/carmen-sandiego.jpg");
+    background-image: url("../images/carmen-sandiego.jpg");
 }
 
 #color-overlay {
