@@ -17,9 +17,9 @@ let days = [
 ];
 let day = days[now.getDay()];
 
-let h4 = document.querySelector("h4#date");
+let h2 = document.querySelector("h4#date");
 
-h4.innerHTML = `${day} ${hours}:${minutes}`;
+h2.innerHTML = `${day} ${hours}:${minutes}`;
 
 
 
