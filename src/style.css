@@ -42,6 +42,10 @@ ul {
     padding: 0;
 }
 
+li:first-letter {
+    text-transform: capitalize;
+}
+
 .container {
     background: linear-gradient(109.6deg,
             rgba(227, 236, 62, 0.68) 11.2%,
@@ -144,8 +148,4 @@ ul {
 
 #fahrenheit-link {
     color: #fff;
-}
-
-#description {
-    text-transform: capitalize;
 }
