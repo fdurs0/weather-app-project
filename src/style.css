@@ -114,6 +114,15 @@ li:first-letter {
     text-align: center;
 }
 
+.weather-temperature .active {
+    color: #fff;
+    cursor: default;
+}
+
+.weather-temperature .active:hover {
+    text-decoration: none;
+}
+
 #element-with-background-image {
     position: relative;
     background-size: absolute;
@@ -138,10 +147,6 @@ li:first-letter {
     text-align: center;
 }
 
-#celsius-link {
-    color: #fff;
-}
-
-#fahrenheit-link {
-    color: #fff;
+#min-temp {
+    font-weight: lighter;
 }
