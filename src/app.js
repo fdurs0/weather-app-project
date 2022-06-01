@@ -17,9 +17,9 @@ let days = [
 ];
 let day = days[now.getDay()];
 
-let h2 = document.querySelector("h2#date");
+let dateHeader = document.querySelector("#date");
 
-h2.innerHTML = `${day} ${hours}:${minutes}`;
+dateHeader.innerHTML = `${day} ${hours}:${minutes}`;
 
 function formatDate(timestamp) {
   let date = new date(timestamp);
