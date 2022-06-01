@@ -35,29 +35,30 @@
 
         <section class="weatherMain">
           <div class="row">
-            <div class="col-6">
-              <span class="headerIcon">🌤️</span>
-
-              <h3 id="city">
-                Montreal
-                <button class="btn" id="current-location-button">
-                  <span class="material-symbols-outlined"
-                    >location_searching</span
-                  >
-                </button>
-              </h3>
+            <div class="col-1">
+              <div class="mainWeatherIcon">
+                <img
+                  src="http://openweathermap.org/img/wn/01d@2x.png"
+                  alt="Clear"
+                  id="icon"
+                  class="headerIcon"
+                />
+              </div>
+            </div>
+            <div class="col-5">
+              <h3 id="city">Montreal</h3>
               <ul>
-                <li>Last updated:<span id="date"></span></li>
+                <li>Last updated: <span id="date"></span></li>
                 <li id="main-temp">
                   <h5>
-                    <span id="current-temp">30</span
+                    <span id="current-temp">24</span
                     ><a href="#" id="celsius-link">℃</a> |
                     <small id="fTemp"
                       ><a href="#" id="fahrenheit-link">℉</a></small
                     >
                   </h5>
                 </li>
-                <li id="description">Sun and clouds</li>
+                <li id="description">Clear</li>
                 <li id="windSpeed">Windspeed: 3 km/h</li>
                 <li id="humidity">Humidity: 74%</li>
               </ul>
@@ -68,7 +69,7 @@
                   <div class="search-row">
                     <input
                       type="search"
-                      placeholder="Enter Your Destination"
+                      placeholder="Type Your Destination"
                       autofocus="on"
                       autocomplete="off"
                       class="city-input"
@@ -104,31 +105,41 @@
         <br />
         <br />
 
-        <section class="weather5Day">
+        <section class="weatherForecast">
           <div class="forecast">
             <div class="row">
               <div class="col-2">
-                Sunday <br /><span class="icon">☀️</span>
+                Sunday <br /><span class="forecastIcon" id="forecast-icon"
+                  ><img src="http://openweathermap.org/img/wn/01d@2x.png"
+                /></span>
                 <br />
                 31/12<a href="#" id="celsius-link">℃</a>
               </div>
               <div class="col-2">
-                Monday <br /><span class="icon">🌤️</span>
+                Monday <br /><span class="forecastIcon" id="forecast-icon"
+                  ><img src="http://openweathermap.org/img/wn/02d@2x.png"
+                /></span>
                 <br />
                 27/11<a href="#" id="celsius-link">℃</a>
               </div>
               <div class="col-2">
-                Tuesday <br /><span class="icon">🌧️</span>
+                Tuesday <br /><span class="forecastIcon" id="forecast-icon"
+                  ><img src="http://openweathermap.org/img/wn/10d@2x.png"
+                /></span>
                 <br />
                 28/10<a href="#" id="celsius-link">℃</a>
               </div>
               <div class="col-2">
-                Wednesday <br /><span class="icon">⛈️</span>
+                Wednesday <br /><span class="forecastIcon" id="forecast-icon"
+                  ><img src="http://openweathermap.org/img/wn/11d@2x.png"
+                /></span>
                 <br />
                 22/14<a href="#" id="celsius-link">℃</a>
               </div>
               <div class="col-2">
-                Thursday <br /><span class="icon">⛅</span>
+                Thursday <br /><span class="forecastIcon" id="forecast-icon"
+                  ><img src="http://openweathermap.org/img/wn/02d@2x.png"
+                /></span>
                 <br />
                 29/13<a href="#" id="celsius-link">℃</a>
               </div>

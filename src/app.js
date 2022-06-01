@@ -18,7 +18,6 @@ let days = [
 let day = days[now.getDay()];
 
 let dateHeader = document.querySelector("#date");
-
 dateHeader.innerHTML = `${day} ${hours}:${minutes}`;
 
 function formatDate(timestamp) {
@@ -47,17 +46,19 @@ function showWeather(response) {
   let windSpeedElement = document.querySelector("#windSpeed");
   let descriptionElement = document.querySelector("#description");
   let dateElement = document.querySelector("#date");
-  let iconElement = document.querySelector("headerIcon");
+  let iconElement = document.querySelector("#icon");
+  celsiusTemperature = response.data.main.temp;
   cityElement.innerHTML = response.data.name;
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   humidityElement.innerHTML = `Humidity: ${response.data.main.humidity}%`;
   windSpeedElement.innerHTML = `Wind Speed: ${Math.round(response.data.wind.speed)} km/h`;
   descriptionElement.innerHTML = response.data.weather[0].description;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
-  iconElement.innerHTML = response.data.weather[0].icon;
+  iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-function searchCity(event) {
+function searchCityInput(event) {
   event.preventDefault();
   let apiKey = "37b42cfa7db9441892fa3c187b5aea44";
   let cityInput = document.querySelector("#city-input");
@@ -66,12 +67,5 @@ function searchCity(event) {
   axios.get(apiURL).then(showWeather);
 }
 
-function searchLocation(position) {
-  let apiKey = "37b42cfa7db9441892fa3c187b5aea44";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(showWeather);
-}
-
 let cityForm = document.querySelector("#search-form");
-cityForm.addEventListener("submit", searchCity);
-
+cityForm.addEventListener("submit", searchCityInput);

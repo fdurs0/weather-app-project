@@ -53,14 +53,7 @@ li:first-letter {
     padding: 15px;
 }
 
-.headerIcon {
-    float: left;
-    font-size: 750%;
-    margin: 0 15px 0 0;
-    text-align: center;
-}
-
-.icon {
+.forecastIcon {
     font-size: 350%;
 }
 
@@ -136,6 +129,13 @@ li:first-letter {
     height: 100%;
     background-color: transparent;
     opacity: 0.9;
+}
+
+#icon {
+    float: left;
+    font-size: 100%;
+    margin: 45px 15px 0 0;
+    text-align: center;
 }
 
 #celsius-link {
