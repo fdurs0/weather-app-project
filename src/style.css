@@ -104,10 +104,6 @@ li:first-letter {
     width: 40%;
 }
 
-.forecast {
-    text-align: center;
-}
-
 .footer {
     font-size: small;
     padding: 5px;
@@ -121,6 +117,11 @@ li:first-letter {
 
 .weather-temperature .active:hover {
     text-decoration: none;
+}
+
+.weather-forecast {
+    margin-top: 20px;
+    text-align: center;
 }
 
 #element-with-background-image {
@@ -147,6 +148,7 @@ li:first-letter {
     text-align: center;
 }
 
-#min-temp {
+#forecast-temp-min {
     font-weight: lighter;
+    opacity: 0.6;
 }

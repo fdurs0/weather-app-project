@@ -33,126 +33,73 @@
           <br />
         </header>
 
-        <section class="weatherMain">
-          <div class="row">
-            <div class="col-1">
-              <div class="mainWeatherIcon">
-                <img
-                  src="http://openweathermap.org/img/wn/01d@2x.png"
-                  alt="Clear"
-                  id="icon"
-                  class="headerIcon"
-                />
-              </div>
+        <div class="row">
+          <div class="col-1">
+            <div class="mainWeatherIcon">
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                alt="Clear"
+                id="icon"
+                class="headerIcon"
+              />
             </div>
-            <div class="col-5">
-              <div class="weather-temperature">
-                <h3 id="city">Montreal</h3>
-                <ul>
-                  <li>Last updated: <span id="date"></span></li>
-                  <li id="main-temp">
-                    <h5>
-                      <span id="current-temp">24</span
-                      ><a href="#" id="celsius-link" class="active">℃</a> |
-                      <small id="fTemp"
-                        ><a href="#" id="fahrenheit-link">℉</a></small
-                      >
-                    </h5>
-                  </li>
-                  <li id="description">Clear</li>
-                  <li id="windSpeed">Windspeed: 3 km/h</li>
-                  <li id="humidity">Humidity: 74%</li>
-                </ul>
-              </div>
+          </div>
+          <div class="col-5">
+            <div class="weather-temperature">
+              <h3 id="city">Montreal</h3>
+              <ul>
+                <li>Last updated: <span id="date"></span></li>
+                <li id="main-temp">
+                  <h5>
+                    <span id="current-temp">24</span
+                    ><a href="#" id="celsius-link" class="active">℃</a> |
+                    <small id="fTemp"
+                      ><a href="#" id="fahrenheit-link">℉</a></small
+                    >
+                  </h5>
+                </li>
+                <li id="description">Clear</li>
+                <li id="windSpeed">Windspeed: 3 km/h</li>
+                <li id="humidity">Humidity: 74%</li>
+              </ul>
             </div>
-            <div class="col-6">
-              <div class="city-search">
-                <form class="search-form" id="search-form">
-                  <div class="search-row">
-                    <input
-                      type="search"
-                      placeholder="Type Your Destination"
-                      autofocus="on"
-                      autocomplete="off"
-                      class="city-input"
-                      id="city-input"
-                    />
-                    <input
-                      type="submit"
-                      value="Search🕵️"
-                      class="search-button"
-                    />
-                  </div>
-                </form>
-              </div>
-
-              <div class="extra-features">
-                <button
-                  onclick="window.location.href='https://factcity.com/world/landmarks-and-tourist-attractions/'"
-                >
-                  Explore Landmarks
-                </button>
-
-                <br />
-                <div class="audio-container">
-                  <audio
-                    src="music/Where in the World is Carmen Sandiego (1991 FULL VERSION).mp3"
-                    controls
-                  ></audio>
+          </div>
+          <div class="col-6">
+            <div class="city-search">
+              <form class="search-form" id="search-form">
+                <div class="search-row">
+                  <input
+                    type="search"
+                    placeholder="Type Your Destination"
+                    autofocus="on"
+                    autocomplete="off"
+                    class="city-input"
+                    id="city-input"
+                  />
+                  <input type="submit" value="Search🕵️" class="search-button" />
                 </div>
-              </div>
+              </form>
             </div>
-          </div>
-        </section>
-        <br />
-        <br />
 
-        <section class="weatherForecast">
-          <div class="forecast">
-            <div class="row">
-              <div class="col-2">
-                Sunday <br /><span class="forecastIcon" id="forecast-icon"
-                  ><img src="http://openweathermap.org/img/wn/01d@2x.png"
-                /></span>
-                <br />
-                <span id="max-temp">31° </span> |
-                <span id="min-temp"> 12°</span>
-              </div>
-              <div class="col-2">
-                Monday <br /><span class="forecastIcon" id="forecast-icon"
-                  ><img src="http://openweathermap.org/img/wn/02d@2x.png"
-                /></span>
-                <br />
-                <span id="max-temp">27° </span> |
-                <span id="min-temp"> 11°</span>
-              </div>
-              <div class="col-2">
-                Tuesday <br /><span class="forecastIcon" id="forecast-icon"
-                  ><img src="http://openweathermap.org/img/wn/10d@2x.png"
-                /></span>
-                <br />
-                <span id="max-temp">28° </span> |
-                <span id="min-temp"> 10°</span>
-              </div>
-              <div class="col-2">
-                Wednesday <br /><span class="forecastIcon" id="forecast-icon"
-                  ><img src="http://openweathermap.org/img/wn/11d@2x.png"
-                /></span>
-                <br />
-                <span id="max-temp">22° </span> |
-                <span id="min-temp"> 14°</span>
-              </div>
-              <div class="col-2">
-                Thursday <br /><span class="forecastIcon" id="forecast-icon"
-                  ><img src="http://openweathermap.org/img/wn/02d@2x.png"
-                /></span>
-                <br />
-                <span id="max-temp">29° </span> |
-                <span id="min-temp"> 13°</span>
+            <div class="extra-features">
+              <button
+                onclick="window.location.href='https://factcity.com/world/landmarks-and-tourist-attractions/'"
+              >
+                Explore Landmarks
+              </button>
+
+              <br />
+              <div class="audio-container">
+                <audio
+                  src="music/Where in the World is Carmen Sandiego (1991 FULL VERSION).mp3"
+                  controls
+                ></audio>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+
+        <div class="weather-forecast" id="forecast"></div>
       </div>
     </div>
 
