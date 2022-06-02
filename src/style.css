@@ -142,13 +142,33 @@ li:first-letter {
 }
 
 #icon {
-    float: left;
+    background-image: url("../images/carmen-sandiego.jpg");
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     font-size: 100%;
-    margin: 45px 15px 0 0;
-    text-align: center;
+    margin: 45px 25px 0 25px;
+}
+
+#weather-forecast-row {
+    margin: 10px 25px 0 25px;
+}
+
+#forecast-description {
+    font-size: x-small;
+    font-weight: 500;
+}
+
+#weather-forecast-icon {
+    background-color: #cfecf9;
+    background-image: url("../images/carmen-sandiego.jpg");
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
 #forecast-temp-min {
-    font-weight: lighter;
+    font-weight: 600;
     opacity: 0.6;
 }
